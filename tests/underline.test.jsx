@@ -1,0 +1,22 @@
+import { render } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import { Nodown } from "../src";
+import parserOptions from "./parserOptions.json";
+
+const renderNodown = (content) => {
+  return render(<Nodown content={content} parserOptions={parserOptions} />);
+};
+
+describe("Underline", () => {
+  it("Basic underline", () => {
+    const { container } = renderNodown("==Underline==");
+    const element = container.querySelector("p");
+    expect(element).toMatchInlineSnapshot(`
+      <p>
+        <u>
+          Underline
+        </u>
+      </p>
+    `);
+  });
+});

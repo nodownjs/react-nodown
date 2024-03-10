@@ -7,7 +7,7 @@ function Alert({ title, variant, children }) {
 
   return (
     <div className={`alert ${variant}`}>
-      <h4>{titleContent ? { ...titleContent } : null}</h4>
+      {titleContent ? <h4>{titleContent}</h4> : null}
       {content}
     </div>
   );
