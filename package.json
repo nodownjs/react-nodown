@@ -1,0 +1,25 @@
+{
+  "name": "react-nodown",
+  "version": "0.1.0",
+  "description": "Nodown package for React",
+  "main": "dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodownjs/react-nodown"
+  },
+  "homepage": "https://github.com/nodownjs/react-nodown#readme",
+  "scripts": {
+    "build": "node esbuild.mjs"
+  },
+  "author": "Pierre-LHOSTE",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "nodown": "^0.2.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
