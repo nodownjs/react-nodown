@@ -4,7 +4,7 @@ import renderToReact from "./render";
 
 function Nodown({ content, parserOptions, renderOptions }) {
   const tree = parser(content, parserOptions);
-  const html = renderToReact(tree);
+  const html = renderToReact(tree, renderOptions);
 
   return <>{html}</>;
 }

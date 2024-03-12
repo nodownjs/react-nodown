@@ -37,7 +37,17 @@ function App() {
         onKeyUp={updateDoc}
       ></textarea>
       <div id="nodown-output">
-        <Nodown content={data} />
+        <Nodown
+          content={data}
+          renderOptions={{
+            underline: {
+              childrenFormat: "jsx",
+              customRender: (obj) => {
+                return <span>{obj.children}</span>;
+              },
+            },
+          }}
+        />
       </div>
       <div id="switch" onClick={switchPls}>
         <div id="circle"></div>

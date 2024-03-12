@@ -54,10 +54,6 @@ export function childrenMap(children) {
   });
 }
 
-function childrenMapHTML(children) {
-  return children.map((child) => recursiveRender(child));
-}
-
 export function recursiveRender(obj) {
   if (!obj || typeof obj !== "object") {
     return obj ? obj.toString() : "";
@@ -78,13 +74,8 @@ export function recursiveRender(obj) {
 
       let mappedChildren;
       if (hasChildren) {
-        if (
-          opt.childrenFormat === undefined ||
-          opt.childrenFormat === "string"
-        ) {
+        if (opt.childrenFormat === undefined || opt.childrenFormat === "jsx") {
           mappedChildren = childrenMap(obj.children);
-        } else if (opt.childrenFormat === "elements") {
-          mappedChildren = childrenMapHTML(obj.children);
         } else if (opt.childrenFormat === "object") {
           mappedChildren = obj.children;
         } else {
@@ -99,7 +90,7 @@ export function recursiveRender(obj) {
         children: mappedChildren,
       });
       if (React.isValidElement(element)) {
-        return element;
+        return <>{element}</>;
       } else {
         return <></>;
       }
@@ -110,6 +101,13 @@ export function recursiveRender(obj) {
   return element;
 }
 
+/**
+ * Renders a React document based on the provided object syntax tree.
+ *
+ * @param {Object} tree - The object syntax tree representing the document structure.
+ * @param {Object} optionsArg - Optional options object.
+ * @returns {React.ReactNode} - The rendered React document.
+ */
 export default function renderToReact(tree, optionsArg) {
   setOptions(optionsArg);
   const doc = recursiveRender(tree);
