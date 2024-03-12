@@ -1,8 +1,8 @@
 import { useState } from "react";
+import { Nodown } from "../../../dist/main";
 import "../../../node_modules/nodown/styles/index.css";
 import "../../../node_modules/nodown/styles/theme-dark.css";
 import "../../../node_modules/nodown/styles/theme-light.css";
-import { Nodown } from "../../../src";
 import "./styles.css";
 
 function App() {
