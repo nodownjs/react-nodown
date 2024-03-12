@@ -1,0 +1,10 @@
+node_modules/
+pack/
+src/
+test-site/
+.git/
+.gitignore
+esbuild.mjs
+coverage/
+tests/
+vite.config.js
