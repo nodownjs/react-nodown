@@ -3,7 +3,7 @@ import { childrenMap } from "../render";
 
 function Emphasis({ children }) {
   const content = childrenMap(children);
-  return <em>{content}</em>;
+  return <em className="nodown-emphasis">{content}</em>;
 }
 
 export default Emphasis;

@@ -5,7 +5,7 @@ function Footnote({ children, id }) {
   const content = childrenMap(children);
   addFootnoteId(id);
   return (
-    <li className="footnote" id={`fn-${id}`}>
+    <li className="nodown-footnote" id={`fn-${id}`}>
       {content}
     </li>
   );

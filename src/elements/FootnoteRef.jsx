@@ -4,11 +4,11 @@ function FootnoteRef({ id, refId, index, inactive, raw }) {
   let element = null;
   if (!inactive) {
     const a = (
-      <a href={`#fn-${refId}`} id={`fnref-${id}`} className="footnote-ref">
+      <a href={`#fn-${refId}`} id={`fnref-${id}`}>
         {index}
       </a>
     );
-    const sup = <sup>{a}</sup>;
+    const sup = <sup className="nodown-footnote-ref">{a}</sup>;
     element = sup;
   } else {
     element = <>{raw}</>;

@@ -3,7 +3,7 @@ import { childrenMap } from "../render";
 
 function Paragraph({ children }) {
   const content = childrenMap(children);
-  return <p>{content}</p>;
+  return <p className="nodown-paragraph">{content}</p>;
 }
 
 export default Paragraph;

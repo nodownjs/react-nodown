@@ -3,7 +3,7 @@ import { childrenMap } from "../render";
 
 function Underline({ children }) {
   const content = childrenMap(children);
-  return <u>{content}</u>;
+  return <u className="nodown-underline">{content}</u>;
 }
 
 export default Underline;

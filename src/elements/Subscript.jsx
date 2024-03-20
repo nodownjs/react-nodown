@@ -3,7 +3,7 @@ import { childrenMap } from "../render";
 
 function Subscript({ children }) {
   const content = childrenMap(children);
-  return <sub>{content}</sub>;
+  return <sub className="nodown-subscript">{content}</sub>;
 }
 
 export default Subscript;

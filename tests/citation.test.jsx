@@ -12,11 +12,17 @@ describe("Citation", () => {
     const { container } = renderNodown("> Citation text\n> - Author");
     const element = container.querySelector("blockquote");
     expect(element).toMatchInlineSnapshot(`
-      <blockquote>
-        <p>
+      <blockquote
+        class="nodown-citation"
+      >
+        <p
+          class="nodown-paragraph"
+        >
           Citation text
         </p>
-        <p>
+        <p
+          class="nodown-paragraph"
+        >
           - Author
         </p>
       </blockquote>
@@ -27,8 +33,12 @@ describe("Citation", () => {
     const { container } = renderNodown("> Citation text");
     const element = container.querySelector("blockquote");
     expect(element).toMatchInlineSnapshot(`
-      <blockquote>
-        <p>
+      <blockquote
+        class="nodown-citation"
+      >
+        <p
+          class="nodown-paragraph"
+        >
           Citation text
         </p>
       </blockquote>

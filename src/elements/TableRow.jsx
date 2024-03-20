@@ -3,7 +3,7 @@ import { childrenMap } from "../render";
 
 function TableRow({ children }) {
   const content = childrenMap(children);
-  return <tr>{content}</tr>;
+  return <tr className="nodown-table-row">{content}</tr>;
 }
 
 export default TableRow;

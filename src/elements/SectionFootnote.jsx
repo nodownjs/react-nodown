@@ -3,7 +3,11 @@ import { childrenMap } from "../render";
 
 function FootnoteSection({ children }) {
   const content = childrenMap(children);
-  return <section id="footnotes">{content}</section>;
+  return (
+    <section className="nodown-section-footnote" id="footnotes">
+      {content}
+    </section>
+  );
 }
 
 export default FootnoteSection;

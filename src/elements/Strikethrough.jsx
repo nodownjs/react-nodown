@@ -3,7 +3,7 @@ import { childrenMap } from "../render";
 
 function Strikethrough({ children }) {
   const content = childrenMap(children);
-  return <del>{content}</del>;
+  return <del className="nodown-strikethrough">{content}</del>;
 }
 
 export default Strikethrough;

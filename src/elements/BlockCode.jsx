@@ -11,8 +11,8 @@ function BlockCode({ children, language }) {
 
   const className = language ? language : null;
   return (
-    <pre className={className}>
-      <code>{content}</code>
+    <pre className={["nodown-block-code", className]}>
+      <code className="nodown-code">{content}</code>
     </pre>
   );
 }

@@ -10,12 +10,14 @@ const renderNodown = (content) => {
 describe("Alert", () => {
   it("Without title", () => {
     const { container } = renderNodown(">! Warning");
-    const element = container.querySelector(".alert");
+    const element = container.querySelector(".nodown-alert");
     expect(element).toMatchInlineSnapshot(`
       <div
-        class="alert warning"
+        class="nodown-alert warning"
       >
-        <p>
+        <p
+          class="nodown-paragraph"
+        >
           Warning
         </p>
       </div>
@@ -24,15 +26,17 @@ describe("Alert", () => {
 
   it("With title", () => {
     const { container } = renderNodown(">! # Warning\n> Warning message");
-    const element = container.querySelector(".alert");
+    const element = container.querySelector(".nodown-alert");
     expect(element).toMatchInlineSnapshot(`
       <div
-        class="alert warning"
+        class="nodown-alert warning"
       >
         <h4>
           Warning
         </h4>
-        <p>
+        <p
+          class="nodown-paragraph"
+        >
           Warning message
         </p>
       </div>

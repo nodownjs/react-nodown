@@ -12,7 +12,15 @@ function Image({ source, title, width, height, render, alt }) {
     imageRendering: generateImageRendering(render),
   };
 
-  return <img alt={altText} title={titleText} src={source} style={styles} />;
+  return (
+    <img
+      className="nodown-image"
+      alt={altText}
+      title={titleText}
+      src={source}
+      style={styles}
+    />
+  );
 }
 
 function generateImageRendering(render) {

@@ -6,7 +6,7 @@ function Unicode({ children, char }) {
   const charSpan = <span>{content}</span>;
   const charElement = <span className="preview">{char}</span>;
   const codeElement = (
-    <code className="unicode">
+    <code className="nodown-unicode">
       {charElement}
       {charSpan}
     </code>

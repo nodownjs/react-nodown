@@ -6,9 +6,9 @@ function Table({ headers, rows }) {
   const bodyRows = childrenMap(rows);
 
   return (
-    <table>
+    <table className="nodown-table">
       <thead>
-        <tr>{...headerRows}</tr>
+        <tr className="nodown-table-row">{...headerRows}</tr>
       </thead>
       <tbody>{...bodyRows}</tbody>
     </table>

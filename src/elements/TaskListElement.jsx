@@ -6,7 +6,7 @@ function TaskListElement({ children, checked }) {
   const checkbox = <input type="checkbox" checked={checked} readOnly />;
 
   return (
-    <li>
+    <li className="nodown-task-list-element">
       {checkbox}
       {content}
     </li>

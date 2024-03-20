@@ -14,8 +14,12 @@ describe("Block code", () => {
     );
     const element = container.querySelector("pre");
     expect(element).toMatchInlineSnapshot(`
-      <pre>
-        <code>
+      <pre
+        class="nodown-block-code,"
+      >
+        <code
+          class="nodown-code"
+        >
           console.log('Hello, World!');
           
 
@@ -34,9 +38,11 @@ describe("Block code", () => {
     const element = container.querySelector("pre");
     expect(element).toMatchInlineSnapshot(`
       <pre
-        class="javascript"
+        class="nodown-block-code,javascript"
       >
-        <code>
+        <code
+          class="nodown-code"
+        >
           console.log('Hello, World!');
           
 

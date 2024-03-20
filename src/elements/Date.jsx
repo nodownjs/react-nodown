@@ -11,7 +11,7 @@ function DateElement({ children, timestamp }) {
     minute: "numeric",
   });
   const content = childrenMap(children);
-  const timeClass = "date";
+  const timeClass = "nodown-date";
   return (
     <span title={title} className={timeClass}>
       {content}

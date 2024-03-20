@@ -6,7 +6,7 @@ function Alert({ title, variant, children }) {
   const titleContent = title ? childrenMap(title) : null;
 
   return (
-    <div className={`alert ${variant}`}>
+    <div className={`nodown-alert ${variant}`}>
       {titleContent ? <h4>{titleContent}</h4> : null}
       {content}
     </div>

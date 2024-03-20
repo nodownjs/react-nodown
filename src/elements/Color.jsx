@@ -2,7 +2,7 @@ import React from "react";
 import { childrenMap } from "../render";
 
 function Color({ children, color }) {
-  const codeClass = "color";
+  const codeClass = "nodown-color";
   const colorClass = "preview";
   const size = "1em";
   const styles = {

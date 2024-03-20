@@ -15,7 +15,11 @@ const Div = (obj) => {
     textAlign: obj.display !== "inline" ? obj.align : undefined,
   };
 
-  return <div style={styles}>{...renderedContent}</div>;
+  return (
+    <div className="nodown-div" style={styles}>
+      {...renderedContent}
+    </div>
+  );
 };
 
 export default Div;

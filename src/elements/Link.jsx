@@ -9,7 +9,7 @@ function Link({ children, href, title }) {
     content = [<>{href}</>];
 
   return (
-    <a href={href} title={title}>
+    <a className="nodown-link" href={href} title={title}>
       {extraSpace}
       {content}
     </a>

@@ -23,7 +23,11 @@ function SubDiv({ total, size, align, children }) {
   if (align) styles = { ...styles, textAlign: align };
   styles = { ...styles, flex };
 
-  return <div style={styles}>{content}</div>;
+  return (
+    <div className="nodown-sub-div" style={styles}>
+      {content}
+    </div>
+  );
 }
 
 export default SubDiv;
