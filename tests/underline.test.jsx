@@ -12,8 +12,12 @@ describe("Underline", () => {
     const { container } = renderNodown("==Underline==");
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
-        <u>
+      <p
+        class="nodown-paragraph"
+      >
+        <u
+          class="nodown-underline"
+        >
           Underline
         </u>
       </p>

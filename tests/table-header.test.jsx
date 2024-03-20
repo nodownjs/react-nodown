@@ -16,6 +16,7 @@ describe("Table header", () => {
     expect(element).toMatchInlineSnapshot(`
       <th
         align="left"
+        class="nodown-table-header"
       >
         Header 1
       </th>

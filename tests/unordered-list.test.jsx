@@ -14,14 +14,22 @@ describe("Unordered list", () => {
     );
     const element = container.querySelector("ul");
     expect(element).toMatchInlineSnapshot(`
-      <ul>
-        <li>
+      <ul
+        class="nodown-unordered-list"
+      >
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
-        <li>
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
-        <li>
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
       </ul>
@@ -34,14 +42,24 @@ describe("Unordered list", () => {
     );
     const element = container.querySelector("ul");
     expect(element).toMatchInlineSnapshot(`
-      <ul>
-        <li>
+      <ul
+        class="nodown-unordered-list"
+      >
+        <li
+          class="nodown-list-element"
+        >
           List element
-          <ul>
-            <li>
+          <ul
+            class="nodown-unordered-list"
+          >
+            <li
+              class="nodown-list-element"
+            >
               List element
             </li>
-            <li>
+            <li
+              class="nodown-list-element"
+            >
               List element
             </li>
           </ul>

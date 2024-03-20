@@ -13,10 +13,10 @@ const char2 = `U+1DDF`;
 describe("Unicode", () => {
   it("Basic unicode 1", () => {
     const { container } = renderNodown(`\`${char1}\``);
-    const element = container.querySelector(".unicode");
+    const element = container.querySelector(".nodown-unicode");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="unicode"
+        class="nodown-unicode"
       >
         <span
           class="preview"
@@ -31,10 +31,10 @@ describe("Unicode", () => {
   });
   it("Basic unicode 2", () => {
     const { container } = renderNodown(`\`${char2}\``);
-    const element = container.querySelector(".unicode");
+    const element = container.querySelector(".nodown-unicode");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="unicode"
+        class="nodown-unicode"
       >
         <span
           class="preview"

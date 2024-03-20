@@ -13,6 +13,7 @@ describe("Image", () => {
     const element = getByRole(container, "img");
     expect(element).toMatchInlineSnapshot(`
       <img
+        class="nodown-image"
         src="https://exemple.com/image.png"
       />
     `);
@@ -26,6 +27,7 @@ describe("Image", () => {
     expect(element).toMatchInlineSnapshot(`
       <img
         alt="alt text"
+        class="nodown-image"
         src="https://exemple.com/image.png"
       />
     `);
@@ -39,6 +41,7 @@ describe("Image", () => {
     expect(element).toMatchInlineSnapshot(`
       <img
         alt="Title: Title text"
+        class="nodown-image"
         src="https://exemple.com/image.png"
         title="Title text"
       />
@@ -53,6 +56,7 @@ describe("Image", () => {
     expect(element).toMatchInlineSnapshot(`
       <img
         alt="alt text"
+        class="nodown-image"
         src="https://exemple.com/image.png"
         title="Title text"
       />

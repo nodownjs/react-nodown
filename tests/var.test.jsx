@@ -12,8 +12,12 @@ describe("Var", () => {
     const { container } = renderNodown("<test>\n<test>: Var value");
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
-        <span>
+      <p
+        class="nodown-paragraph"
+      >
+        <span
+          class="nodown-var"
+        >
           Var value
         </span>
       </p>
@@ -24,9 +28,15 @@ describe("Var", () => {
     const { container } = renderNodown("<`<test>`>\n<test>: Var value");
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
-        <code>
-          <span>
+      <p
+        class="nodown-paragraph"
+      >
+        <code
+          class="nodown-code"
+        >
+          <span
+            class="nodown-var"
+          >
             Var value
           </span>
         </code>

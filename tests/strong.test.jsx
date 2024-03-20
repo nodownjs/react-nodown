@@ -12,8 +12,12 @@ describe("Strong", () => {
     const { container } = renderNodown("**Strong**");
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
-        <strong>
+      <p
+        class="nodown-paragraph"
+      >
+        <strong
+          class="nodown-strong"
+        >
           Strong
         </strong>
       </p>

@@ -21,18 +21,27 @@ describe("Sub div", () => {
     const element = container.firstChild;
     expect(element).toMatchInlineSnapshot(`
       <div
+        class="nodown-root"
         id="nodown-render"
       >
-        <div>
-          <div />
+        <div
+          class="nodown-div"
+        >
+          <div
+            class="nodown-div"
+          />
         </div>
         <div
+          class="nodown-div"
           style="text-align: left;"
         >
           <div
+            class="nodown-sub-div"
             style="overflow-y: hidden; flex: 1 0 0%;"
           >
-            <p>
+            <p
+              class="nodown-paragraph"
+            >
               Sub div created
             </p>
           </div>
@@ -47,25 +56,37 @@ describe("Sub div", () => {
     const element = container.firstChild;
     expect(element).toMatchInlineSnapshot(`
       <div
+        class="nodown-root"
         id="nodown-render"
       >
-        <div>
-          <div />
+        <div
+          class="nodown-div"
+        >
+          <div
+            class="nodown-div"
+          />
         </div>
         <div
+          class="nodown-div"
           style="text-align: left;"
         >
           <div
+            class="nodown-sub-div"
             style="overflow-y: hidden; flex: 1 0 0%;"
           >
-            <p>
+            <p
+              class="nodown-paragraph"
+            >
               Sub div created
             </p>
           </div>
           <div
+            class="nodown-sub-div"
             style="overflow-y: hidden; text-align: left; flex: 1 0 0%;"
           >
-            <p>
+            <p
+              class="nodown-paragraph"
+            >
               New sub div
             </p>
           </div>

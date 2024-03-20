@@ -12,7 +12,9 @@ describe("Superscript", () => {
     const { container } = renderNodown("<^Superscript text>");
     const element = container.querySelector("sup");
     expect(element).toMatchInlineSnapshot(`
-      <sup>
+      <sup
+        class="nodown-superscript"
+      >
         Superscript text
       </sup>
     `);

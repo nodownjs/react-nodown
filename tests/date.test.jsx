@@ -10,10 +10,10 @@ const renderNodown = (content) => {
 describe("Date", () => {
   it("Basic date", () => {
     const { container } = renderNodown(`<i:20024-03-10:d>`);
-    const element = container.querySelector(".date");
+    const element = container.querySelector(".nodown-date");
     expect(element).toMatchInlineSnapshot(`
       <span
-        class="date"
+        class="nodown-date"
         title="lundi 10 mars 1924 à 00:00"
       >
         3/10/24

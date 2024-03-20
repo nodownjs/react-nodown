@@ -12,7 +12,9 @@ describe("List element", () => {
     const { container } = renderNodown("- List element");
     const element = container.querySelector("li");
     expect(element).toMatchInlineSnapshot(`
-      <li>
+      <li
+        class="nodown-list-element"
+      >
         List element
       </li>
     `);

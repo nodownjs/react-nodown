@@ -12,8 +12,12 @@ describe("Emphasis", () => {
     const { container } = renderNodown(`*emphasis text*`);
     const divider = container.querySelector("p");
     expect(divider).toMatchInlineSnapshot(`
-      <p>
-        <em>
+      <p
+        class="nodown-paragraph"
+      >
+        <em
+          class="nodown-emphasis"
+        >
           emphasis text
         </em>
       </p>
@@ -24,10 +28,16 @@ describe("Emphasis", () => {
     const { container } = renderNodown(`*emphasis **text***`);
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
-        <em>
+      <p
+        class="nodown-paragraph"
+      >
+        <em
+          class="nodown-emphasis"
+        >
           emphasis 
-          <strong>
+          <strong
+            class="nodown-strong"
+          >
             text
           </strong>
         </em>

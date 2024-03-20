@@ -13,9 +13,12 @@ describe("Root", () => {
     const element = container.firstChild;
     expect(element).toMatchInlineSnapshot(`
       <div
+        class="nodown-root"
         id="nodown-render"
       >
-        <p>
+        <p
+          class="nodown-paragraph"
+        >
            
         </p>
       </div>

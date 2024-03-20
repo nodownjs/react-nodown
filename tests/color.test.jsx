@@ -17,46 +17,46 @@ const colorHsla = `hsla(260, 100%, 96%, 0.5)`;
 describe("Color", () => {
   it("Hex color", () => {
     const { container } = renderNodown(`\`${colorHex}\``);
-    const element = container.querySelector(".color");
+    const element = container.querySelector(".nodown-color");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="color"
+        class="nodown-color"
       >
         <span
           class="preview"
           style="background-color: rgb(255, 218, 185); display: inline-block; margin-right: 0.375em; transform: translateY(.1em); height: 1em; width: 1em;"
         />
-        ${colorHex}
+        #FFDAB9
       </code>
     `);
   });
   it("RGBA color", () => {
     const { container } = renderNodown(`\`${colorRgba}\``);
-    const element = container.querySelector(".color");
+    const element = container.querySelector(".nodown-color");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="color"
+        class="nodown-color"
       >
         <span
           class="preview"
           style="background-color: rgba(255, 235, 205, 0.5); display: inline-block; margin-right: 0.375em; transform: translateY(.1em); height: 1em; width: 1em;"
         />
-        ${colorRgba}
+        rgba(255, 235, 205, 0.5)
       </code>
     `);
   });
   it("HSLA color", () => {
     const { container } = renderNodown(`\`${colorHsla}\``);
-    const element = container.querySelector(".color");
+    const element = container.querySelector(".nodown-color");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="color"
+        class="nodown-color"
       >
         <span
           class="preview"
           style="background-color: rgba(241, 235, 255, 0.5); display: inline-block; margin-right: 0.375em; transform: translateY(.1em); height: 1em; width: 1em;"
         />
-        ${colorHsla}
+        hsla(260, 100%, 96%, 0.5)
       </code>
     `);
   });

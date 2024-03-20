@@ -12,7 +12,9 @@ describe("Title", () => {
     const { container } = renderNodown("# Title");
     const element = container.querySelector("h1");
     expect(element).toMatchInlineSnapshot(`
-      <h1>
+      <h1
+        class="nodown-title"
+      >
         Title
       </h1>
     `);
@@ -23,6 +25,7 @@ describe("Title", () => {
     const element = container.querySelector("h2");
     expect(element).toMatchInlineSnapshot(`
       <h2
+        class="nodown-title"
         id="title-1"
       >
         Title
@@ -35,6 +38,7 @@ describe("Title", () => {
     const element = container.querySelector("h2");
     expect(element).toMatchInlineSnapshot(`
       <h2
+        class="nodown-title"
         id="custom-id"
       >
         Title 

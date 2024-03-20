@@ -12,7 +12,9 @@ describe("Paragraph", () => {
     const { container } = renderNodown("Simple paragraph");
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
+      <p
+        class="nodown-paragraph"
+      >
         Simple paragraph
       </p>
     `);

@@ -22,11 +22,14 @@ describe("Footnote ref", () => {
     const { container } = renderNodown(`test[^1]\n\n[^1]: footnote text`);
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
+      <p
+        class="nodown-paragraph"
+      >
         test
-        <sup>
+        <sup
+          class="nodown-footnote-ref"
+        >
           <a
-            class="footnote-ref"
             href="#fn-1"
             id="fnref-1"
           >
@@ -43,11 +46,14 @@ describe("Footnote ref", () => {
     );
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
+      <p
+        class="nodown-paragraph"
+      >
         test
-        <sup>
+        <sup
+          class="nodown-footnote-ref"
+        >
           <a
-            class="footnote-ref"
             href="#fn-custom-id"
             id="fnref-custom-id"
           >

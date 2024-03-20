@@ -20,12 +20,19 @@ describe("Div", () => {
     const { container } = renderNodown(`===\nDiv text`);
     const element = container.querySelector("#nodown-render > div");
     expect(element).toMatchInlineSnapshot(`
-      <div>
-        <div />
+      <div
+        class="nodown-div"
+      >
         <div
+          class="nodown-div"
+        />
+        <div
+          class="nodown-sub-div"
           style="overflow-y: hidden; text-align: left; flex: 1 0 0%;"
         >
-          <p>
+          <p
+            class="nodown-paragraph"
+          >
             Div text
           </p>
         </div>
@@ -37,12 +44,19 @@ describe("Div", () => {
     const { container } = renderNodown(`===:\nDiv text`);
     const element = container.querySelector("#nodown-render > div");
     expect(element).toMatchInlineSnapshot(`
-      <div>
-        <div />
+      <div
+        class="nodown-div"
+      >
         <div
+          class="nodown-div"
+        />
+        <div
+          class="nodown-sub-div"
           style="overflow-y: hidden; text-align: right; flex: 1 0 0%;"
         >
-          <p>
+          <p
+            class="nodown-paragraph"
+          >
             Div text
           </p>
         </div>

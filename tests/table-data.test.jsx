@@ -16,6 +16,7 @@ describe("Table data", () => {
     expect(element).toMatchInlineSnapshot(`
       <td
         align="left"
+        class="nodown-table-data"
       >
         Row 1
       </td>

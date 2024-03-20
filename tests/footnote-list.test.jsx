@@ -22,13 +22,16 @@ describe("Footnote list", () => {
     const { container } = renderNodown(`test[^1]\n\n[^1]: footnote text`);
     const element = container.querySelector("#footnotes > ol");
     expect(element).toMatchInlineSnapshot(`
-      <ol>
+      <ol
+        class="nodown-footnote-list"
+      >
         <li
-          class="footnote"
+          class="nodown-footnote"
           id="fn-1"
         >
           footnote text
           <a
+            class="nodown-link"
             href="#fnref-1"
           >
              

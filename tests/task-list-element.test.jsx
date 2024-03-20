@@ -12,7 +12,9 @@ describe("Task list element", () => {
     const { container } = renderNodown("- [ ] List element");
     const element = container.querySelector("li");
     expect(element).toMatchInlineSnapshot(`
-      <li>
+      <li
+        class="nodown-task-list-element"
+      >
         <input
           readonly=""
           type="checkbox"
@@ -26,7 +28,9 @@ describe("Task list element", () => {
     const { container } = renderNodown("- [x] List element");
     const element = container.querySelector("li");
     expect(element).toMatchInlineSnapshot(`
-      <li>
+      <li
+        class="nodown-task-list-element"
+      >
         <input
           checked=""
           readonly=""

@@ -12,8 +12,12 @@ describe("Strikethrough", () => {
     const { container } = renderNodown("~~Strikethrough~~");
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
-        <del>
+      <p
+        class="nodown-paragraph"
+      >
+        <del
+          class="nodown-strikethrough"
+        >
           Strikethrough
         </del>
       </p>

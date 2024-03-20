@@ -13,6 +13,7 @@ describe("Link", () => {
     const element = container.querySelector("a");
     expect(element).toMatchInlineSnapshot(`
       <a
+        class="nodown-link"
         href="https://exemple.com/image.png"
       >
         https://exemple.com/image.png
@@ -25,6 +26,7 @@ describe("Link", () => {
     const element = container.querySelector("a");
     expect(element).toMatchInlineSnapshot(`
       <a
+        class="nodown-link"
         href="https://exemple.com/image.png"
       >
         Text
@@ -39,6 +41,7 @@ describe("Link", () => {
     const element = container.querySelector("a");
     expect(element).toMatchInlineSnapshot(`
       <a
+        class="nodown-link"
         href="https://exemple.com/image.png"
         title="Title text"
       >
@@ -54,6 +57,7 @@ describe("Link", () => {
     const element = container.querySelector("a");
     expect(element).toMatchInlineSnapshot(`
       <a
+        class="nodown-link"
         href="https://exemple.com/image.png"
         title="Title text"
       >

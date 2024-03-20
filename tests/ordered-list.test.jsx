@@ -14,14 +14,22 @@ describe("Ordered list", () => {
     );
     const element = container.querySelector("ol");
     expect(element).toMatchInlineSnapshot(`
-      <ol>
-        <li>
+      <ol
+        class="nodown-ordered-list"
+      >
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
-        <li>
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
-        <li>
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
       </ol>
@@ -34,14 +42,24 @@ describe("Ordered list", () => {
     );
     const element = container.querySelector("ol");
     expect(element).toMatchInlineSnapshot(`
-      <ol>
-        <li>
+      <ol
+        class="nodown-ordered-list"
+      >
+        <li
+          class="nodown-list-element"
+        >
           List element
-          <ol>
-            <li>
+          <ol
+            class="nodown-ordered-list"
+          >
+            <li
+              class="nodown-list-element"
+            >
               List element
             </li>
-            <li>
+            <li
+              class="nodown-list-element"
+            >
               List element
             </li>
           </ol>
@@ -57,15 +75,22 @@ describe("Ordered list", () => {
     const element = container.querySelector("ol");
     expect(element).toMatchInlineSnapshot(`
       <ol
+        class="nodown-ordered-list"
         start="10"
       >
-        <li>
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
-        <li>
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
-        <li>
+        <li
+          class="nodown-list-element"
+        >
           List element
         </li>
       </ol>

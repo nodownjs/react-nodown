@@ -23,11 +23,12 @@ describe("Footnote", () => {
     const divider = container.querySelector("#footnotes > ol > li");
     expect(divider).toMatchInlineSnapshot(`
       <li
-        class="footnote"
+        class="nodown-footnote"
         id="fn-1"
       >
         footnote text
         <a
+          class="nodown-link"
           href="#fnref-1"
         >
            
@@ -44,11 +45,12 @@ describe("Footnote", () => {
     const divider = container.querySelector("#footnotes > ol > li");
     expect(divider).toMatchInlineSnapshot(`
       <li
-        class="footnote"
+        class="nodown-footnote"
         id="fn-custom-id"
       >
         footnote text
         <a
+          class="nodown-link"
           href="#fnref-custom-id"
         >
            

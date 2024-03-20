@@ -14,30 +14,40 @@ describe("Table", () => {
     );
     const element = container.querySelector("table");
     expect(element).toMatchInlineSnapshot(`
-      <table>
+      <table
+        class="nodown-table"
+      >
         <thead>
-          <tr>
+          <tr
+            class="nodown-table-row"
+          >
             <th
               align="left"
+              class="nodown-table-header"
             >
               Header 1
             </th>
             <th
               align="left"
+              class="nodown-table-header"
             >
               Header 2
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr
+            class="nodown-table-row"
+          >
             <td
               align="left"
+              class="nodown-table-data"
             >
               Row 1
             </td>
             <td
               align="left"
+              class="nodown-table-data"
             >
               Row 2
             </td>

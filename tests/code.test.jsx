@@ -12,7 +12,9 @@ describe("Code", () => {
     const { container } = renderNodown("`Code text`");
     const element = container.querySelector("code");
     expect(element).toMatchInlineSnapshot(`
-      <code>
+      <code
+        class="nodown-code"
+      >
         Code text
       </code>
     `);
@@ -22,7 +24,9 @@ describe("Code", () => {
     const { container } = renderNodown("`Code text\\`");
     const element = container.querySelector("code");
     expect(element).toMatchInlineSnapshot(`
-      <code>
+      <code
+        class="nodown-code"
+      >
         Code text\\
       </code>
     `);

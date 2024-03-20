@@ -23,10 +23,15 @@ describe("Section", () => {
     const element = container.firstChild;
     expect(element).toMatchInlineSnapshot(`
       <div
+        class="nodown-root"
         id="nodown-render"
       >
-        <section>
-          <p>
+        <section
+          class="nodown-section"
+        >
+          <p
+            class="nodown-paragraph"
+          >
              
           </p>
         </section>
@@ -39,15 +44,23 @@ describe("Section", () => {
     const element = container.firstChild;
     expect(element).toMatchInlineSnapshot(`
       <div
+        class="nodown-root"
         id="nodown-render"
       >
-        <section>
-          <p>
+        <section
+          class="nodown-section"
+        >
+          <p
+            class="nodown-paragraph"
+          >
             Simple paragraph
           </p>
         </section>
-        <section>
+        <section
+          class="nodown-section"
+        >
           <h2
+            class="nodown-title"
             id="title-1"
           >
             Heading

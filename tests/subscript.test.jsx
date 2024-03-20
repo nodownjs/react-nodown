@@ -12,7 +12,9 @@ describe("Subscript", () => {
     const { container } = renderNodown("<_Subscript text>");
     const element = container.querySelector("sub");
     expect(element).toMatchInlineSnapshot(`
-      <sub>
+      <sub
+        class="nodown-subscript"
+      >
         Subscript text
       </sub>
     `);

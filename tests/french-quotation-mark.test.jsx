@@ -22,7 +22,9 @@ describe("French quotation mark", () => {
     const { container } = renderNodown(`"Quotation"`);
     const element = container.querySelector("p");
     expect(element).toMatchInlineSnapshot(`
-      <p>
+      <p
+        class="nodown-paragraph"
+      >
         « 
         Quotation
          »

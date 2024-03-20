@@ -17,9 +17,14 @@ describe("Table of contents", () => {
       <div
         class="table-of-contents"
       >
-        <ul>
-          <li>
+        <ul
+          class="nodown-unordered-list"
+        >
+          <li
+            class="nodown-list-element"
+          >
             <a
+              class="nodown-link"
               href="#title-1"
             >
               Table of contents

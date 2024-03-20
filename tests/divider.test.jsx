@@ -11,6 +11,10 @@ describe("Divider", () => {
   it("Basic divider", () => {
     const { container } = renderNodown(`---`);
     const element = container.querySelector("hr");
-    expect(element).toMatchInlineSnapshot(`<hr />`);
+    expect(element).toMatchInlineSnapshot(`
+      <hr
+        class="nodown-divider"
+      />
+    `);
   });
 });
