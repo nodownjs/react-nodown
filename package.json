@@ -15,7 +15,7 @@
   "author": "Pierre-LHOSTE",
   "license": "AGPL-3.0",
   "dependencies": {
-    "nodown": "^0.2.2"
+    "nodown": "^0.3.6"
   },
   "devDependencies": {
     "@testing-library/react": "^14.2.1",
