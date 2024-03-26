@@ -23,11 +23,11 @@ describe("Section footnote", () => {
     const element = container.querySelector("#footnotes");
     expect(element).toMatchInlineSnapshot(`
       <section
-        class="nodown-section-footnote"
+        class="nodown-section nodown-section-footnote"
         id="footnotes"
       >
         <ol
-          class="nodown-footnote-list"
+          class="nodown-ordered-list nodown-footnote-list"
         >
           <li
             class="nodown-footnote"

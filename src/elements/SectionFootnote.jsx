@@ -4,7 +4,7 @@ import { childrenMap } from "../render";
 function FootnoteSection({ children }) {
   const content = childrenMap(children);
   return (
-    <section className="nodown-section-footnote" id="footnotes">
+    <section className="nodown-section nodown-section-footnote" id="footnotes">
       {content}
     </section>
   );

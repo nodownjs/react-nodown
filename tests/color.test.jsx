@@ -20,7 +20,7 @@ describe("Color", () => {
     const element = container.querySelector(".nodown-color");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="nodown-color"
+        class="nodown-code nodown-color"
       >
         <span
           class="preview"
@@ -35,7 +35,7 @@ describe("Color", () => {
     const element = container.querySelector(".nodown-color");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="nodown-color"
+        class="nodown-code nodown-color"
       >
         <span
           class="preview"
@@ -50,7 +50,7 @@ describe("Color", () => {
     const element = container.querySelector(".nodown-color");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="nodown-color"
+        class="nodown-code nodown-color"
       >
         <span
           class="preview"

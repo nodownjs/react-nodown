@@ -16,7 +16,7 @@ describe("Unicode", () => {
     const element = container.querySelector(".nodown-unicode");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="nodown-unicode"
+        class="nodown-code nodown-unicode"
       >
         <span
           class="preview"
@@ -34,7 +34,7 @@ describe("Unicode", () => {
     const element = container.querySelector(".nodown-unicode");
     expect(element).toMatchInlineSnapshot(`
       <code
-        class="nodown-unicode"
+        class="nodown-code nodown-unicode"
       >
         <span
           class="preview"
