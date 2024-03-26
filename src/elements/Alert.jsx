@@ -7,7 +7,7 @@ function Alert({ title, variant, children }) {
 
   return (
     <div className={`nodown-alert ${variant}`}>
-      {titleContent ? <h4>{titleContent}</h4> : null}
+      {titleContent ? <h4 className="nodown-title">{titleContent}</h4> : null}
       {content}
     </div>
   );
