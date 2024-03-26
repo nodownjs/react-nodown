@@ -1,6 +1,6 @@
 {
   "name": "react-nodown",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Nodown package for React",
   "main": "dist/main.js",
   "repository": {
