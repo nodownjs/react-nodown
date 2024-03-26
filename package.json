@@ -10,7 +10,8 @@
   "homepage": "https://github.com/nodownjs/react-nodown#readme",
   "scripts": {
     "build": "node esbuild.mjs",
-    "test": "vitest --coverage"
+    "test": "vitest --coverage",
+    "deploy": "npm run build && npm version patch && npm publish"
   },
   "author": "Pierre-LHOSTE",
   "license": "AGPL-3.0",
