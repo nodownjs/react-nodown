@@ -31,7 +31,9 @@ describe("Alert", () => {
       <div
         class="nodown-alert warning"
       >
-        <h4>
+        <h4
+          class="nodown-title"
+        >
           Warning
         </h4>
         <p

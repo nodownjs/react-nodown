@@ -25,10 +25,6 @@ describe("Div", () => {
       >
         <div
           class="nodown-sub-div"
-          style="overflow-y: hidden; flex: 1 0 0%;"
-        />
-        <div
-          class="nodown-sub-div"
           style="overflow-y: hidden; text-align: left; flex: 1 0 0%;"
         >
           <p
@@ -48,10 +44,6 @@ describe("Div", () => {
       <div
         class="nodown-div"
       >
-        <div
-          class="nodown-sub-div"
-          style="overflow-y: hidden; flex: 1 0 0%;"
-        />
         <div
           class="nodown-sub-div"
           style="overflow-y: hidden; text-align: right; flex: 1 0 0%;"
