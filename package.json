@@ -3,6 +3,7 @@
   "version": "0.1.16",
   "description": "Nodown package for React",
   "main": "dist/main.js",
+  "types": "react-nodown.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/nodownjs/react-nodown"
