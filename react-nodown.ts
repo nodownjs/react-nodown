@@ -1,8 +1,9 @@
 declare module "react-nodown" {
-  import { FC } from "react";
+  import { FC, ReactElement } from "react";
 
   type ParserOptions = object;
   type RenderOptions = object;
+  type Tree = object;
 
   interface NodownProps {
     content: string;
@@ -12,5 +13,7 @@ declare module "react-nodown" {
 
   const Nodown: FC<NodownProps>;
 
-  export default Nodown;
+  function renderToReact(tree: Tree, optionsArg?: RenderOptions): ReactElement;
+
+  export { Nodown, renderToReact };
 }

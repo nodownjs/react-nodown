@@ -109,7 +109,7 @@ export function recursiveRender(obj) {
  * @returns {React.ReactNode} - The rendered React document.
  */
 export default function renderToReact(tree, optionsArg) {
-  setOptions(optionsArg);
+  if (optionsArg) setOptions(optionsArg);
   const doc = recursiveRender(tree);
   const disabledRoot = options?.root?.disabled ?? false;
   if (disabledRoot) {
